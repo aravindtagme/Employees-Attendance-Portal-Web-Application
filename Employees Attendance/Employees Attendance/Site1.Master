@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Employees_Attendance.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> Employee Attendance System </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+        <span class="logo">Employee Portal</span>
+        <div class="menu">
+            <a href="Attendance.aspx">Mark Attendance</a>
+            <a href="ViewAttendance.aspx">Reports</a>
+            <a href="ManageEmployees.aspx">Manage Employees</a>
+            <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="logout-btn" OnClick="btnLogout_Click" CausesValidation="false"/>
+        </div>
+        </div>
+
+        <div class="content">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
