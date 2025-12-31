@@ -70,6 +70,17 @@ Employees Attendance/
 
 6. Build: Rebuild the solution and run via IIS Express (F5).
 
+ScreenShots : 
+
+<img width="1919" height="1019" alt="Screenshot 2025-12-29 234325" src="https://github.com/user-attachments/assets/8cb5404e-c3dd-450c-8311-5f28c8dd2048" />
+
+<img width="1919" height="1024" alt="Screenshot 2025-12-29 234847" src="https://github.com/user-attachments/assets/671b562c-36d8-4de9-a360-39dd6e6d5bde" />
+
+<img width="1919" height="1023" alt="Screenshot 2025-12-29 234519" src="https://github.com/user-attachments/assets/81654e48-6eb7-40cb-aac4-d568e7a1aee7" />
+
+
+
+
 
 👤 Author
 
