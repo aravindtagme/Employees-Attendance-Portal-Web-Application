@@ -7,11 +7,14 @@ The Employee Attendance Portal is a professional ASP.NET Web Application designe
 
 ✨ Key Features :
 
-📅 Daily Attendance Marking: "Punch In" and "Punch Out" functionality using server-side timestamps.
 
 📋 Live Attendance Reports: A structured GridView for employees and managers to view historical logs.
 
-👥 Employee Management: Admin interface to add, edit, or remove employee records.
+📊 View Attendance: A dynamic GridView report showing daily logs and entry/exit times.
+
+👥 Employee Management: Admin interface to add, edit, or remove employee records[CRUD OPERATIONS].
+
+👥 Manage Employees: A dedicated administrative module to perform CRUD operations on employee profiles.
 
 🛡️ Secure Authentication: Secure login system to protect sensitive personnel data.
 
@@ -26,10 +29,11 @@ The Employee Attendance Portal is a professional ASP.NET Web Application designe
 
 ⚪ Database: Microsoft SQL Server
 
-⚪ Data Access: ADO.NET
+⚪ Data Access: ADO.NET(SQLConnection, SQLCommand)
 
 ⚪ Frontend: ASPX, HTML5, CSS3, Bootstrap
 
+⚪ Backend: ASP.NET Web Application (C# / .NET Framework)
 
 
 🧱 Project Folder Structure
@@ -68,4 +72,5 @@ Employees Attendance/
 
 
 👤 Author
+
 ARAVIND M
