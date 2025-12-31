@@ -1,0 +1,44 @@
+-- 1. Create the Database
+CREATE DATABASE EmployeeAttendanceDB;
+GO
+USE EmployeeAttendanceDB;
+GO
+
+-- 2. Create Admin Table for Login
+CREATE TABLE AdminLogin (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Username NVARCHAR(50),
+    Password NVARCHAR(50)
+);
+
+-- 3. Create Employees Table
+CREATE TABLE Employees (
+    EmpId INT PRIMARY KEY IDENTITY(1,1),
+    EmpName NVARCHAR(100),
+    Department NVARCHAR(50) -- IT, HR, or Helpdesk
+);
+
+-- 4. Create Attendance Table
+CREATE TABLE Attendance (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    EmpId INT FOREIGN KEY REFERENCES Employees(EmpId),
+    Status NVARCHAR(20),
+    AttDate DATETIME DEFAULT GETDATE()
+);
+
+-- 5. Insert Admin and 9 Employees
+INSERT INTO AdminLogin (Username, Password) VALUES ('admin', 'admin123');
+
+INSERT INTO Employees (EmpName, Department) VALUES 
+('Alice Smith', 'IT'), ('Bob Johnson', 'IT'), ('Charlie Davis', 'IT'),
+('David Wilson', 'HR'), ('Eve Brown', 'HR'), ('Frank Miller', 'HR'),
+('Grace Lee', 'Helpdesk'), ('Heidi White', 'Helpdesk'), ('Ivan Black', 'Helpdesk');
+
+SELECT * FROM AdminLogin;
+go
+
+SELECT * FROM Employees;
+go
+
+SELECT * FROM Attendance;
+go
